@@ -3,4 +3,5 @@
 * http://mvnrepository.com/artifact/com.itextpdf/itext-asian/
 * http://mvnrepository.com/artifact/com.itextpdf/itextpdf
 * http://blog.cartn.jp/archives/468
-
+* http://api.itextpdf.com/itext/
+* http://www.ibm.com/developerworks/jp/opensource/library/os-javapdf/
