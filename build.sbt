@@ -12,6 +12,7 @@ libraryDependencies ++= {
     ,itext % "itext-asian" % itextVersion
     ,"com.github.jsuereth.scala-arm" %% "scala-arm" % "1.0"
     ,"org.scalaz" %% "scalaz-core" % "6.0.3"
+    ,"com.tristanhunt" %% "knockoff" % "0.8.0-16"
   )
 }
 
@@ -22,6 +23,7 @@ initialCommands in Compile in console := {
     ,"com.itextpdf.text.{List => _,_}"
     ,"com.itextpdf.text.pdf._"
     ,"com.github.xuwei_k.scalapdf._"
+    ,"com.tristanhunt.knockoff._"
   ).map("import "+).mkString("\n")
 }
 
