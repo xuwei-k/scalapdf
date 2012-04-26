@@ -37,14 +37,25 @@ object Sample1{
 
   val data =
     """# head 1
-      |# head 2
-      |# head 3
-      |# head 4
-      |# head 5
-      |# head 6
+      |## head 2
+      |### head 3
+      |#### head 4
+      |##### head 5
+      |###### head 6
+      |
       |[GitHub](http://github.com)
-      |* Item1 `111`
+      |
+      |* Item1 111
       |* Item2 222
+      |
+      |> hoge
+      |> abababa
+      |
+      |`
+      |def sum(a:Int,b:Int) = {
+      |  a + b
+      |}
+      |`
       |
       |1. hoge1
       |2. hoge2""".stripMargin
@@ -53,7 +64,7 @@ object Sample1{
   def f2(doc:Document){
        val list = knockoff(data)
     list.foreach(println)
-    val a = list.flatMap{ObjectMapping.convertBlock}.flatMap{_ :: new Phrase("") :: Nil}
+    val a = list.flatMap{ObjectMapping.convertBlock}
     a.foreach(println) 
     a.foreach(doc.add)
   }

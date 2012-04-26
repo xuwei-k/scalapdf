@@ -10,8 +10,8 @@ libraryDependencies ++= {
   // "com.lowagie" % "itext" % "2.1.7" //こっちは古いやつで、package名変わったらしい
      itext % "itextpdf" % itextVersion
     ,itext % "itext-asian" % itextVersion
-    ,"com.github.jsuereth.scala-arm" %% "scala-arm" % "1.0"
-    ,"org.scalaz" %% "scalaz-core" % "6.0.3"
+    ,"com.github.jsuereth.scala-arm" %% "scala-arm" % "1.1"
+    ,"org.scalaz" %% "scalaz-core" % "6.0.4"
     ,"com.tristanhunt" %% "knockoff" % "0.8.0-16"
   )
 }
